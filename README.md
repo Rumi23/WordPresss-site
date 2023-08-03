@@ -2,6 +2,7 @@
 This is for creating a wordpress site using docker compose for assignment given by rtCamp organization.
 
 Step 1: Installing Docker Engine
+
   First, install required dependencies using the following command:
   apt-get install apt-transport-https curl ca-certificates curl software-properties-common -y
 
@@ -20,6 +21,7 @@ Step 1: Installing Docker Engine
   
 
 Step 2: Installing Docker Compose
+
   Run the following command to download the current stable release of Docker Compose:
   curl -L https://github.com/docker/compose/releases/download/1.29.2/docker-compose-Linux-x86_64 -o /usr/local/bin/docker-compose
 
@@ -32,6 +34,7 @@ Step 2: Installing Docker Compose
   
 
 Step 3: Setting Up YML File
+
   First, create a WordPress directory to hold your docker-compose.yml file:
   mkdir wordpress
 
@@ -41,6 +44,7 @@ Step 3: Setting Up YML File
   
 
 Step 4: Building WordPress Container
+
   First, change the directory to wordpress:
   cd wordpress
 
@@ -62,11 +66,13 @@ Step 4: Building WordPress Container
   
 
 Step 5: Getting Access to WordPress Website
+
 At this point, your WordPress site is ready. Now, open your web browser and type the URL http://your-server-ip. You will be redirected to the WordPress language selection screen.
 
 
 
 Step 6: Updating WordPress Container
+
   First, stop all containers using the following command:
   cd wordpress
   docker-compose down
@@ -79,7 +85,8 @@ Step 6: Updating WordPress Container
 
   
 
-Conclusion
+Conclusion:
+
   Your WordPress website is now up and running in a containerization environment. I hope you have now enough understanding of how Docker Compose works and helps you to set up a WordPress website within a minute.
 
 
